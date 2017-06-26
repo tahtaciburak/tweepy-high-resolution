@@ -18,7 +18,7 @@ me = api.me()
 #profile_image_url attribute is a very low quality profile image
 worse_photo_url = me.profile_image_url
 #You can use following code to get high quality profile image instead of above
-better_photo_url = follower.profile_image_url[:63]+follower.profile_image_url[70:]
+better_photo_url = me.profile_image_url[:63]+me.profile_image_url[70:]
 
 print("Worse URL :"+worse_photo_url)
 print("Better URL :"+better_photo_url)
